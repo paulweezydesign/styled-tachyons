@@ -31,14 +31,21 @@ const Navbar = styled.nav`
 const Navbrand = styled.h2`
   ${ty`b f22 lh-title helvetica`}
 `;
-
-
+const StyledLinks = styled.a`
+  ${ty`blue b f3 `}
+`;
+const LinkSection = styled.div`
+  ${ty`flex w-50 dn flex-ns `}
+`;
 class App extends PureComponent {
   render() {
     return (
       <div>
         <Navbar>
             <Navbrand>Styled Tachyons</Navbrand>
+            <LinkSection>
+              <StyledLinks href="/">Home</StyledLinks>
+            </LinkSection>
         </Navbar>
         <Article blue fine>
           <Title>What a large title you have there!</Title>
