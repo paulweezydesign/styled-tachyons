@@ -29,13 +29,13 @@ const Navbar = styled.nav`
   ${ty`flex items-center w-100 bg-white blue shadow-2`}
 `;
 const Navbrand = styled.h2`
-  ${ty`b f22 lh-title helvetica`}
+  ${ty`b f22 lh-title helvetica w-50 ml4`}
 `;
 const StyledLinks = styled.a`
-  ${ty`blue b f3 `}
+  ${ty`blue b f3 helvetica ml4 `}
 `;
 const LinkSection = styled.div`
-  ${ty`flex w-50 dn flex-ns `}
+  ${ty`flex w-50 dn flex-l justify-end mr4`}
 `;
 class App extends PureComponent {
   render() {
@@ -45,6 +45,9 @@ class App extends PureComponent {
             <Navbrand>Styled Tachyons</Navbrand>
             <LinkSection>
               <StyledLinks href="/">Home</StyledLinks>
+              <StyledLinks href="/">About</StyledLinks>
+              <StyledLinks href="/">Contact</StyledLinks>
+              <StyledLinks href="/">Blog</StyledLinks>
             </LinkSection>
         </Navbar>
         <Article blue fine>
